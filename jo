@@ -2,6 +2,8 @@ xkb_symbols "josh_standard" {
 
     name[Group1]= "English (Josh Standard)";
 
+    include "level3(ralt_switch)"
+
     key <TLDE> { [        grave,   asciitilde ] };
     key <AE01> { [            1,       exclam ] };
     key <AE02> { [            2,           at ] };
@@ -36,10 +38,10 @@ xkb_symbols "josh_standard" {
     key <AC04> { [            t,            T,      braceleft ] };
     key <AC05> { [            g,            G ] };
     key <AC06> { [            m,            M ] };
-    key <AC07> { [            n,            N,               h,           4 ] };
-    key <AC08> { [            e,            E,               j,           5 ] };
-    key <AC09> { [            i,            I,               k,           6 ] };
-    key <AC10> { [            o,            O,               l ] };
+    key <AC07> { type = "EIGHT_LEVEL", [            n,            N,               h,           4, _, _, H, _ ] };
+    key <AC08> { type = "EIGHT_LEVEL", [            e,            E,               j,           5, _, _, J, _ ] };
+    key <AC09> { type = "EIGHT_LEVEL", [            i,            I,               k,           6, _, _, K, _ ] };
+    key <AC10> { type = "EIGHT_LEVEL", [            o,            O,               l,           _, _, _, L, _ ] };
     key <AC11> { [   apostrophe,     quotedbl ] };
 
     key <LSGT> { [            z,            Z ] };
@@ -54,9 +56,8 @@ xkb_symbols "josh_standard" {
     key <AB09> { [       period,      greater, _,       3 ] };
     key <AB10> { [        slash,     question ] };
 
-    key <SPCE> { [        space,        space,           space,     nobreakspace ] };
+    key <SPCE> { [        space,        space,           ISO_Level5_Shift,     nobreakspace ] };
 
     key <CAPS> { [ ISO_Level3_Shift ] };
 
-    include "level3(ralt_switch)"
 };
