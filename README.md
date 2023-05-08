@@ -1,4 +1,6 @@
 # layott
 Customized keyboard layout for xkb. Main layer is from Colemak-DH with some extra goodies for vim and whatnot.
 
-![keyboard](https://cloud.joshott.net/apps/files_sharing/publicpreview/aA6ddwiemDk7WpC?file=/&fileId=84267&x=1920&y=1200&a=true)
+WHAT THEY WON'T TELL YOU: if you hold down CapsLock and Space you get capital HJKL at neio.
+
+![keyboard](https://cloud.joshott.net/apps/files_sharing/publicpreview/ysJGw25Da2jj4Jt?file=/&fileId=84588&x=1920&y=1200&a=true)
