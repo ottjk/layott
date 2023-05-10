@@ -19,9 +19,9 @@ xkb_symbols "josh_standard" {
     key <AE12> { [        equal,         plus,        multiply,         division ] };
 
     key <AD01> { [            q,            Q ] };
-    key <AD02> { [            w,            W ] };
+    key <AD02> { [            w,            W, backslash ] };
     key <AD03> { [            f,            F, bracketleft ] };
-    key <AD04> { [            p,            P, bracketright ] };
+    key <AD04> { [            p,            P ] };
     key <AD05> { [            b,            B ] };
     key <AD06> { [            j,            J, _, slash ] };
     key <AD07> { [            l,            L, _,          7 ] };
@@ -33,10 +33,10 @@ xkb_symbols "josh_standard" {
     key <BKSL> { [    backslash,          bar ] };
 
     key <AC01> { [            a,            A ] };
-    key <AC02> { [            r,            R ] };
+    key <AC02> { [            r,            R, braceleft ] };
     key <AC03> { [            s,            S,          parenleft ] };
     key <AC04> { [            t,            T,      parenright ] };
-    key <AC05> { [            g,            G ] };
+    key <AC05> { [            g,            G, bracketright ] };
     key <AC06> { [            m,            M, _, asterisk ] };
     key <AC07> { type = "EIGHT_LEVEL", [            n,            N,               Left,           4, _, _, H, _ ] };
     key <AC08> { type = "EIGHT_LEVEL", [            e,            E,               Down,           5, _, _, J, _ ] };
@@ -46,15 +46,10 @@ xkb_symbols "josh_standard" {
 
     key <LSGT> { [            z,            Z ] };
     key <AB01> { [            x,            X ] };
-    key <AB02> { [            c,            C,      braceleft ] };
-    key <AB03> { [            d,            D,      braceright ] };
-    key <AB04> { [            v,            V ] };
+    key <AB02> { [            c,            C ] };
+    key <AB03> { [            d,            D ] };
+    key <AB04> { [            v,            V, braceright ] };
     key <AB05> { [            z,            Z ] }; //Z appears here too because <LSGT> key is not present on ANSI keyboards
-    //key <AB01> { [            x,            X,    bracketright ] };
-    //key <AB02> { [            c,            C,      parenright ] };
-    //key <AB03> { [            d,            D,      braceright ] };
-    //key <AB04> { [            v,            V ] };
-    //key <AB05> { [            z,            Z ] }; //Z appears here too because <LSGT> key is not present on ANSI keyboards
     key <AB06> { [            k,            K, _,       0 ] };
     key <AB07> { [            h,            H, _,       1 ] };
     key <AB08> { [        comma,         less, _,       2 ] };
@@ -62,7 +57,6 @@ xkb_symbols "josh_standard" {
     key <AB10> { [        slash,     question, _, period ] };
 
     key <SPCE> { [        space,        space,           ISO_Level5_Shift,     nobreakspace ] };
-    key <TAB> { [ Tab, Tab, BackSpace ] };
 
     key <CAPS> { [ ISO_Level3_Shift ] };
 
